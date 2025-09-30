@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LXMF
+	bool "lxmf"
+	select BR2_PACKAGE_RNS
+	select BR2_PACKAGE_PYTHON_QRCODE

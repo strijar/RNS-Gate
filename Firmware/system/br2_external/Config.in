@@ -1,2 +1,3 @@
 source "$BR2_EXTERNAL_GATE_PATH/package/codec2/Config.in"
 source "$BR2_EXTERNAL_GATE_PATH/package/rns/Config.in"
+source "$BR2_EXTERNAL_GATE_PATH/package/lxmf/Config.in"
