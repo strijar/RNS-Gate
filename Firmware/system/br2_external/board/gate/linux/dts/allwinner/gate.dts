@@ -1,6 +1,6 @@
 /dts-v1/;
-#include "sun8i-h3.dtsi"
-#include "sunxi-common-regulators.dtsi"
+#include "allwinner/sun8i-h3.dtsi"
+#include "allwinner/sunxi-common-regulators.dtsi"
 
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/input/input.h>
