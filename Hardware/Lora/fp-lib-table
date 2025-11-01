@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "echo")(type "KiCad")(uri "$(KIPRJMOD)/echo.pretty")(options "")(descr ""))
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
+  (lib (name "r1cbu_library")(type "KiCad")(uri "${KIPRJMOD}/r1cbu_library.pretty")(options "")(descr ""))
+)

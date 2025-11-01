@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "RF_Module")(type "Legacy")(uri "${KIPRJMOD}/Library.pretty/RF_Module.lib")(options "")(descr ""))
+)
