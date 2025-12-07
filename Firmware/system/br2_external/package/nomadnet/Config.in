@@ -1,0 +1,4 @@
+config BR2_PACKAGE_NOMADNET
+	bool "nomadnet"
+	select BR2_PACKAGE_LXMF
+	select BR2_PACKAGE_PYTHON_URWID
