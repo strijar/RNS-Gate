@@ -1,0 +1,2 @@
+HOME=/mnt/rns
+RETICULUM_CONFIG=$HOME/.reticulum

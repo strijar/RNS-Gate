@@ -4,17 +4,18 @@
 #
 NAME=rns-echo
 DAEMON=/usr/sbin/$NAME
+PIDFILE="/var/run/$NAME.pid"
 
-[ -r /etc/default/$NAME ] && . /etc/default/$NAME
+[ -r /etc/default/rns ] && . /etc/default/rns
 
 start() {
 	printf "Starting $NAME: "
-	start-stop-daemon -S -q -b --exec $DAEMON -- -s --config=/root/.reticulum
+	start-stop-daemon -S -q -b -m -p $PIDFILE -c rns -x $DAEMON -- -s --config $RETICULUM_CONFIG
 	echo "OK"
 }
 stop() {
 	printf "Stopping $NAME: "
-	killall $NAME
+	start-stop-daemon -K -q -p "$PIDFILE"
 	echo "OK"
 }
 restart() {

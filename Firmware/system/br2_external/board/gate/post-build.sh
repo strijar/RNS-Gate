@@ -8,5 +8,5 @@ BOARD_DIR="${BR2_EXTERNAL_GATE_PATH}/board/gate"
 install -m 0644 -D "${BOARD_DIR}/extlinux.conf" "${TARGET_DIR}/boot/extlinux/extlinux.conf"
 install -m 0644 -D "${BOARD_DIR}/genimage.cfg" "$BINARIES_DIR/genimage.cfg"
 
-rm -rf "${BINARIES_DIR}/reticulum"
-cp -r "${TARGET_DIR}/mnt/reticulum/" "${BINARIES_DIR}/reticulum"
+rm -rf "${BINARIES_DIR}/rns"
+cp -r "${TARGET_DIR}/mnt/rns/" "${BINARIES_DIR}/rns"
