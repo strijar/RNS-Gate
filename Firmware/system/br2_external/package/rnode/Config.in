@@ -1,0 +1,5 @@
+config BR2_PACKAGE_RNODE
+    bool "rnode"
+    select BR2_PACKAGE_LIBCYAML
+    help
+      RNode SPI daemon

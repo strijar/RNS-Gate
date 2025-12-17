@@ -1,18 +1,16 @@
 #!/bin/sh
 #
-# Starts rnsd
+# Starts rnode
 #
-NAME=rnsd
-DAEMON=/usr/bin/$NAME
+NAME=rnode
+DAEMON=/usr/sbin/$NAME
 PIDFILE="/var/run/$NAME.pid"
 
 [ -r /etc/default/rns ] && . /etc/default/rns
 
 start() {
 	printf "Starting $NAME: "
-	start-stop-daemon -S -q -b -m -p $PIDFILE -c rns -x $DAEMON -- --config $RETICULUM_CONFIG
-	echo "Wait..."
-	sleep 5
+	start-stop-daemon -S -q -b -m -p $PIDFILE -x $DAEMON -- $RNODE_CONFIG
 	echo "OK"
 }
 stop() {

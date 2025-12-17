@@ -17,7 +17,7 @@
   # always-on. This directive is optional and can be removed
   # for brevity.
   
-  enable_transport = False
+  enable_transport = True
   
   
   # By default, the first program to launch the Reticulum
@@ -74,7 +74,7 @@
   #   6: Debug logging
   #   7: Extreme logging
   
-  loglevel = 4
+  loglevel = 0
 
 
 # The interfaces section defines the physical and virtual
@@ -84,7 +84,7 @@
 # your own config, or simply remove the unused ones.
 
 [interfaces]
-  
+
   # This interface enables communication with other
   # link-local Reticulum nodes over UDP. It does not
   # need any functional IP infrastructure like routers
@@ -92,7 +92,33 @@
   # local IPv6 is enabled in your operating system, which
   # should be enabled by default in almost any OS. See
   # the Reticulum Manual for more configuration options.
-  
+
   [[Default Interface]]
     type = AutoInterface
     enabled = Yes
+
+  [[Server]]
+    type = TCPServerInterface
+    interface_enabled = yes
+    listen_ip = 0.0.0.0
+    listen_port = 4242
+    name = Server
+
+  [[SPB_TCP]]
+    type = TCPClientInterface
+    interface_enabled = yes
+    target_host = 31.129.33.146
+    target_port = 4242
+    name = SPB_TCP
+    selected_interface_mode = 1
+    configured_bitrate = None
+
+  [[SPI RNode]]
+    type = RNodeInterface
+    enabled = yes
+    port = tcp://localhost
+    frequency = 869525000
+    txpower = 22
+    spreadingfactor = 11
+    codingrate = 5
+    bandwidth = 250000
