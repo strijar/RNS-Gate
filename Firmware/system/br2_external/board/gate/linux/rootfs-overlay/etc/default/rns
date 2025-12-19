@@ -1,2 +1,4 @@
 HOME=/mnt/rns
 RETICULUM_CONFIG=$HOME/.reticulum
+RNODE_CONFIG=$HOME/rnode.yaml
+NOMADNET_CONFIG=$HOME/.nomadnetwork
