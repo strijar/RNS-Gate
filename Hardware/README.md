@@ -9,3 +9,5 @@
 ![](Pics/4.jpg)
 
 ![](Pics/5.jpg)
+
+![](Pics/pinout.jpg)
