@@ -1,0 +1,19 @@
+#!/bin/sh
+
+case "$1" in
+  start)
+	echo heartbeat > /sys/class/leds/orangepi:green:pwr/trigger
+	;;
+  stop)
+	echo default-on > /sys/class/leds/orangepi:green:pwr/trigger
+	;;
+  restart|reload)
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
+
+
