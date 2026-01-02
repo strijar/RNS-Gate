@@ -10,4 +10,6 @@
 
 ![](Pics/5.jpg)
 
+## Audio cable pinout
+
 ![](Pics/pinout.png)
