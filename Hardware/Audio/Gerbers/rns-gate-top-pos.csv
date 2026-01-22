@@ -1,0 +1,14 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"C1","C_Small","C_0805_2012Metric",9.296000,30.220000,180.000000,top
+"C2","C_Small","C_0805_2012Metric",9.296000,32.760000,0.000000,top
+"C3","C_Small","C_0805_2012Metric",3.454000,39.618000,180.000000,top
+"C4","C_Small","C_0805_2012Metric",9.296000,19.298000,0.000000,top
+"J1","Conn_01x13","PinHeader_1x13_P2.54mm_Vertical",30.368000,42.780000,-90.000000,top
+"J2","Conn_02x13_Odd_Even","PinHeader_2x13_P2.54mm_Vertical",-0.082000,-0.420000,90.000000,top
+"J3","Conn_01x02","PinHeader_1x02_P2.54mm_Vertical",19.959000,36.062000,90.000000,top
+"J5","Conn_01x04","PinHeader_1x04_P2.54mm_Vertical",2.946000,14.208000,0.000000,top
+"Q1","2N7002","SOT-23",7.772000,9.138000,180.000000,top
+"R1","R_Small","R_0805_2012Metric",12.598000,5.836000,-90.000000,top
+"R2","R_Small","R_0805_2012Metric",12.598000,10.408000,-90.000000,top
+"RV1","R_Potentiometer","Potentiometer_Bourns_3296W_Vertical",3.708000,19.288000,-90.000000,top
+"RV2","R_Potentiometer","Potentiometer_Bourns_3296W_Vertical",3.708000,30.210000,-90.000000,top
