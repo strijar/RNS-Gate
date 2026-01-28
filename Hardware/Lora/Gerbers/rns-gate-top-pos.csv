@@ -1,3 +1,6 @@
 Ref,Val,Package,PosX,PosY,Rot,Side
+"C1","C_Polarized_Small","CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder",10.030000,38.703600,0.000000,top
+"C2","C_Small","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",0.378000,38.449600,90.000000,top
+"C3","C_Small","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",2.918000,38.449600,90.000000,top
 "J2","Conn_02x13_Odd_Even","PinHeader_2x13_P2.54mm_Vertical",-0.082000,-0.420000,90.000000,top
 "U1","E22-900M30S-SX1262","E22-900M30S-SX1262",13.078000,21.177600,90.000000,top
