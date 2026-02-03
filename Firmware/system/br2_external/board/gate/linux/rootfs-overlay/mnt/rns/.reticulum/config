@@ -122,3 +122,13 @@
     spreadingfactor = 11
     codingrate = 5
     bandwidth = 250000
+
+  [[USB RNode]]
+    type = RNodeInterface
+    enabled = no
+    port = /dev/ttyACM0
+    frequency = 868762500
+    txpower = 10
+    spreadingfactor = 7
+    codingrate = 8
+    bandwidth = 125000
