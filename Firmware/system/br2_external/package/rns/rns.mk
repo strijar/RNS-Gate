@@ -10,7 +10,7 @@ RNS_SETUP_TYPE = setuptools
 RNS_DEPENDENCIES = python-cryptography
 
 define RNS_USERS
-	rns -1 rns -1 * - - - RNS User
+	rns -1 dialout -1 * - - - RNS User
 endef
 
 $(eval $(python-package))
