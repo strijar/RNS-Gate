@@ -1,0 +1,23 @@
+# Node display name
+node-name=RNS-Gate de R1CBU
+
+# Pages directory
+pages-dir=/mnt/rns/.rns-page-node/pages
+
+# Files directory
+files-dir=/mnt/rns/.rns-page-node/files
+
+# Node identity directory
+identity-dir=/mnt/rns/.rns-page-node/node-config
+
+# Announce interval in minutes (default: 360 = 6 hours)
+announce-interval=360
+
+# Page refresh interval in seconds (0 = disabled)
+page-refresh-interval=300
+
+# File refresh interval in seconds (0 = disabled)
+file-refresh-interval=300
+
+# Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+log-level=INFO

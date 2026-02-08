@@ -1,0 +1,3 @@
+config BR2_PACKAGE_RNS_PAGE_NODE
+	bool "rns-page-node"
+	select BR2_PACKAGE_LXMF

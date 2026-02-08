@@ -1,4 +1,5 @@
 HOME=/mnt/rns
 RETICULUM_CONFIG=$HOME/.reticulum
+LXMF_CONFIG=$HOME/.lxmf
 RNODE_CONFIG=$HOME/rnode.yaml
-NOMADNET_CONFIG=$HOME/.nomadnetwork
+RNS_PAGE_NODE_CONFIG=$HOME/.rns-page-node/config

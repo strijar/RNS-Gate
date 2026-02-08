@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# Starts nomadnet
+# Starts rns-page-node
 #
-NAME=nomadnet
+NAME=rns-page-node
 DAEMON=/usr/bin/$NAME
 PIDFILE="/var/run/$NAME.pid"
 
@@ -10,7 +10,7 @@ PIDFILE="/var/run/$NAME.pid"
 
 start() {
 	printf "Starting $NAME: "
-	start-stop-daemon -S -q -b -m -p $PIDFILE -c rns -x $DAEMON -- --config $NOMADNET_CONFIG --rnsconfig $RETICULUM_CONFIG -c -d
+	start-stop-daemon -S -q -b -m -p $PIDFILE -c rns -x $DAEMON -- -c $RETICULUM_CONFIG $RNS_PAGE_NODE_CONFIG
 	echo "OK"
 }
 stop() {
