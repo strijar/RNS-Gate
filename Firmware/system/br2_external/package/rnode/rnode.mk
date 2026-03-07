@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-RNODE_VERSION = 4802f5196e401655ecff55163f32c1e7e426be89
+RNODE_VERSION = 436fe3761674c25fc09bc358b09bff9895af071c
 RNODE_SITE = https://github.com/strijar/RNode-linux
 RNODE_SITE_METHOD = git
 RNODE_LICENSE = GPLv2
