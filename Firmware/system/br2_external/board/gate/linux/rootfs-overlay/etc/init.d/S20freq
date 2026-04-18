@@ -2,7 +2,7 @@
 
 case "$1" in
   start)
-	echo 648000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+	echo 816000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
 	;;
   stop)
 	;;
