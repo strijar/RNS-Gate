@@ -110,8 +110,9 @@
     target_host = 31.129.33.146
     target_port = 4242
     name = SPB_TCP
-    selected_interface_mode = 1
-    configured_bitrate = None
+    mode = boundary
+    announce_rate_target = 3600
+    announce_rate_grace = 2
 
   [[SPI RNode]]
     type = RNodeInterface
@@ -122,6 +123,10 @@
     spreadingfactor = 11
     codingrate = 5
     bandwidth = 250000
+    mode = gw
+    announce_cap = 20
+    announce_rate_target = 10
+    announce_rate_grace = 3
 
   [[USB RNode]]
     type = RNodeInterface
@@ -132,3 +137,7 @@
     spreadingfactor = 7
     codingrate = 8
     bandwidth = 125000
+    mode = gw
+    announce_cap = 20
+    announce_rate_target = 10
+    announce_rate_grace = 3
