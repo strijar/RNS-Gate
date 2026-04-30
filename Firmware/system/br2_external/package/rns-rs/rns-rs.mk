@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-RNS_RS_VERSION = 7417bd4998a12f20b302978072dd5a3264299e85
+RNS_RS_VERSION = d683c15b14c13be8a52f01eafa87b68bd17a7c72
 RNS_RS_SITE = https://github.com/lelloman/rns-rs
 RNS_RS_SITE_METHOD = git
 RNS_RS_DEPENDENCIES = host-rustc
@@ -29,16 +29,17 @@ RNS_RS_CARGO_ENV = \
 
 define RNS_RS_BUILD_CMDS
     cd $(@D) && \
-    $(TARGET_MAKE_ENV) $(RNS_RS_CARGO_ENV) cargo build --release --no-default-features
+    $(TARGET_MAKE_ENV) $(RNS_RS_CARGO_ENV) cargo build --release --features rns-hooks-native
 endef
 
 define RNS_RS_INSTALL_TARGET_CMDS
-    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnid $(TARGET_DIR)/usr/sbin/rnid
-    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnprobe $(TARGET_DIR)/usr/sbin/rnprobe
-    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rns-ctl $(TARGET_DIR)/usr/sbin/rns-ctl
-    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rns-server $(TARGET_DIR)/usr/sbin/rns-server
-    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnsd $(TARGET_DIR)/usr/sbin/rnsd
-    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnstatus $(TARGET_DIR)/usr/sbin/rnstatus
+    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnid $(TARGET_DIR)/usr/bin/rnid
+    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnpath $(TARGET_DIR)/usr/bin/rnpath
+    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnprobe $(TARGET_DIR)/usr/bin/rnprobe
+    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rns-ctl $(TARGET_DIR)/usr/bin/rns-ctl
+    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rns-server $(TARGET_DIR)/usr/bin/rns-server
+    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnsd $(TARGET_DIR)/usr/bin/rnsd
+    $(INSTALL) -D -m 0755 $(@D)/target/$(RUSTC_TARGET_NAME)/release/rnstatus $(TARGET_DIR)/usr/bin/rnstatus
 endef
 
 $(eval $(generic-package))
