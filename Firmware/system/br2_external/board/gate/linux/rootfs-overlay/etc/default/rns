@@ -1,5 +1,0 @@
-HOME=/mnt/rns
-RETICULUM_CONFIG=$HOME/.reticulum
-LXMF_CONFIG=$HOME/.lxmf
-RNODE_CONFIG=$HOME/rnode.yaml
-RNS_PAGE_NODE_CONFIG=$HOME/.rns-page-node/config

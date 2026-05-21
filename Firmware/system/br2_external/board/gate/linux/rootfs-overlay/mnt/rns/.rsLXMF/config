@@ -1,0 +1,31 @@
+[propagation]
+
+enable_node = yes
+node_name = RNS-Gate Propagation Node
+announce_interval = 3600
+announce_at_start = yes
+autopeer = yes
+autopeer_maxdepth = 6
+
+# message_storage_limit = 500
+# propagation_message_max_accepted_size = 256
+# propagation_sync_max_accepted_size = 10240
+# propagation_stamp_cost_target = 16
+# propagation_stamp_cost_flexibility = 3
+# peering_cost = 18
+# remote_peering_cost_max = 26
+# max_peers = 20
+# from_static_only = True
+
+auth_required = no
+
+[lxmf]
+
+display_name = GNS-Gate Peer
+announce_at_start = no
+announce_interval = 3600
+delivery_transfer_max_accepted_size = 1000
+
+[logging]
+
+loglevel = 4

@@ -1,16 +1,16 @@
 #!/bin/sh
 #
-# Starts rnode
+# Starts lxmd-rs
 #
-NAME=rnode
-DAEMON=/usr/sbin/$NAME
+NAME=lxmd-rs
+DAEMON=/usr/bin/$NAME
 PIDFILE="/var/run/$NAME.pid"
 
 [ -r /etc/default/rns-rs ] && . /etc/default/rns-rs
 
 start() {
 	printf "Starting $NAME: "
-	start-stop-daemon -S -q -b -m -p $PIDFILE -x $DAEMON -- $RNODE_CONFIG
+	start-stop-daemon -S -q -b -m -p $PIDFILE -c rns -x $DAEMON -- --rnsconfig $RETICULUM_CONFIG --config $LXMF_CONFIG
 	echo "OK"
 }
 stop() {

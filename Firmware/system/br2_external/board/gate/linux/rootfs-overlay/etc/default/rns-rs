@@ -1,0 +1,4 @@
+HOME=/mnt/rns
+RETICULUM_CONFIG=$HOME/.rsReticulum
+LXMF_CONFIG=$HOME/.rsLXMF
+RNODE_CONFIG=$HOME/rnode.yaml

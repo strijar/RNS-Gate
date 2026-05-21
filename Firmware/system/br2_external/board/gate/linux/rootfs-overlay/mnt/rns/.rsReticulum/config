@@ -1,0 +1,37 @@
+# This is the default Reticulum config file.
+
+[reticulum]
+enable_transport = Yes
+share_instance = Yes
+instance_name = default
+
+[logging]
+loglevel = 4
+
+[interfaces]
+
+[[Server]]
+type = TCPServerInterface
+enabled = yes
+listen_ip = 0.0.0.0
+listen_port = 4242
+name = Server
+
+[[Border_TCP]]
+type = TCPClientInterface
+enabled = yes
+target_host = 78.37.8.219
+target_port = 2397
+name = Border_TCP
+mode = boundary
+
+[[RNode SPI]]
+type = RNodeInterface
+port = tcp://127.0.0.1
+frequency = 868672500
+txpower = 28
+spreadingfactor = 8
+codingrate = 7
+bandwidth = 62500
+mode = gw
+announce_cap = 0.05
