@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-RS_LXMF_VERSION = 3d671ab528a4db7ee3036fbd0f2084a5fd431ed4
+RS_LXMF_VERSION = 5c5bc364d49220f4bb59ee35aed28ced411f5165
 RS_LXMF_SITE = https://github.com/ratspeak/rsLXMF
 RS_LXMF_SITE_METHOD = git
 RS_LXMF_DEPENDENCIES = host-rustc rs-reticulum
