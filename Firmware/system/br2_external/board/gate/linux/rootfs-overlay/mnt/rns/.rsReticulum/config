@@ -34,4 +34,4 @@ spreadingfactor = 8
 codingrate = 7
 bandwidth = 62500
 mode = gw
-announce_cap = 0.05
+announce_cap = 2

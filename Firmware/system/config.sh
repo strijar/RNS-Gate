@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-BR_RELEASE="buildroot-2024.02"
+BR_RELEASE="buildroot-2026.02.1"
 
 if [ ! -e ${BR_RELEASE}.tar.gz ]; then
   wget https://buildroot.org/downloads/${BR_RELEASE}.tar.gz
