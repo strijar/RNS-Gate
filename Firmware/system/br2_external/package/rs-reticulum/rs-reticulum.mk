@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-RS_RETICULUM_VERSION = ac983690116282386e199a7f274331051040d8a7
+RS_RETICULUM_VERSION = e6dd6b3ab3dc38a7695390fc20514312633efeb2
 RS_RETICULUM_SITE = https://github.com/ratspeak/rsReticulum
 RS_RETICULUM_SITE_METHOD = git
 RS_RETICULUM_DEPENDENCIES = host-rustc
