@@ -1,0 +1,10 @@
+config BR2_PACKAGE_FREEDV_TNC
+    bool "FreeDV-TNC"
+    select BR2_PACKAGE_LIBCYAML
+    select BR2_PACKAGE_CODEC2
+    select BR2_PACKAGE_ALSA_LIB
+    select BR2_PACKAGE_FFTW
+    select BR2_PACKAGE_FFTW_DOUBLE
+    select BR2_PACKAGE_LIBGPIOD
+    help
+      FreeDV modem daemon
