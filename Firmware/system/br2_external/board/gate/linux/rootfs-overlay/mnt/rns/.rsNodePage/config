@@ -1,0 +1,19 @@
+[nomadnetwork]
+# Name shown to peers when they see this node's announce.
+display_name = RNS-Gate pages
+
+# Directories are relative to this config file unless given as absolute paths.
+pages_dir = pages
+files_dir = files
+
+# Send an announce as soon as the node starts.
+announce_at_start = yes
+# How often to re-announce, in minutes.
+announce_interval_minutes = 360
+
+# How often to rescan pages_dir/files_dir for changes, in seconds.
+rescan_interval_seconds = 30
+
+# Optional: restrict serving to specific identity hashes (hex, comma-separated).
+# If left empty, the node serves pages to anyone.
+# allowed_identities = a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4

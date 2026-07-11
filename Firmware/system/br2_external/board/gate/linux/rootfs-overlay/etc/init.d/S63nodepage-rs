@@ -1,0 +1,42 @@
+#!/bin/sh
+#
+# Starts nodepage-rs
+#
+NAME=nodepage-rs
+DAEMON=/usr/bin/$NAME
+PIDFILE="/var/run/$NAME.pid"
+
+[ -r /etc/default/rns-rs ] && . /etc/default/rns-rs
+
+start() {
+	printf "Starting $NAME: "
+	start-stop-daemon -S -q -b -m -p $PIDFILE -c rns -x $DAEMON -- --rnsconfig $RETICULUM_CONFIG --config $NODEPAGE_CONFIG
+	echo "OK"
+}
+stop() {
+	printf "Stopping $NAME: "
+	start-stop-daemon -K -q -p "$PIDFILE"
+	echo "OK"
+}
+restart() {
+	stop
+	start
+}
+
+case "$1" in
+  start)
+	start
+	;;
+  stop)
+	stop
+	;;
+  restart|reload)
+	restart
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
+
