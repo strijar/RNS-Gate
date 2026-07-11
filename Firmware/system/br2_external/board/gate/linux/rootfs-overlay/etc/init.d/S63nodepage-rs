@@ -9,6 +9,12 @@ PIDFILE="/var/run/$NAME.pid"
 [ -r /etc/default/rns-rs ] && . /etc/default/rns-rs
 
 start() {
+	printf "Waiting RNSD..."
+	while ! netstat -ln | grep -q ":4242"; do
+	    sleep 0.5
+	done
+	echo "OK"
+
 	printf "Starting $NAME: "
 	start-stop-daemon -S -q -b -m -p $PIDFILE -c rns -x $DAEMON -- --rnsconfig $RETICULUM_CONFIG --config $NODEPAGE_CONFIG
 	echo "OK"
