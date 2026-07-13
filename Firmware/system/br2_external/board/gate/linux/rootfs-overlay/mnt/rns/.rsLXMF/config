@@ -21,7 +21,7 @@ auth_required = no
 
 [lxmf]
 
-display_name = GNS-Gate Peer
+display_name = RNS-Gate Peer
 announce_at_start = no
 announce_interval = 3600
 delivery_transfer_max_accepted_size = 1000
