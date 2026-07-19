@@ -35,3 +35,9 @@ codingrate = 7
 bandwidth = 62500
 mode = gw
 announce_cap = 2
+
+[[DireWolf]]
+type = KISSInterface
+enabled = no
+port = tcp://127.0.0.1:8001
+txtail = 100
